@@ -1,0 +1,62 @@
+form {
+    .orderComplete {
+        background-color: #66CDAA;
+        &:hover {
+            background-color: #ff7b25;
+          }
+        width: 100%;
+
+
+    }
+    #complete-order {
+
+        &:disabled {
+            background-color: lighten($color: #66CDAA, $amount: 20%);
+            cursor: not-allowed;
+        }
+    }
+
+    .form-control {
+        padding: 12px;
+    }
+
+    .form-control:focus {
+        box-shadow: 0 1px 3px 0 #cfd7df;
+      }
+}
+
+.yourOrder {
+    .total {
+        border-bottom: solid 2px grey;
+    }
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+ .StripeElement {
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: box-shadow 150ms ease;
+  }
+
+  .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+
+  #card-errors {
+      color: #fa755a;
+  }

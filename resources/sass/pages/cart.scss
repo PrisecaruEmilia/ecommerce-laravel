@@ -1,0 +1,12 @@
+.cartDescription {
+    .total {
+        background-color: #f2f2f2;
+    }
+    .proceedButton {
+        float: right;
+        background-color: #66CDAA;
+        &:hover {
+            color: white;
+          }
+    }
+}

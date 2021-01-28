@@ -1,0 +1,123 @@
+// Variables
+$text-color: #212121;
+$white: #e9e9e9;
+$light-gray-background: #F5F5F5;
+$gray-background: #535353;
+$separator-color: #CDCDCD;
+$gutter: 30px;
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: url('/img/orangeWave.png');
+  background-size: cover;
+  color: black;
+
+  .top-nav {
+    // height: 500px;
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    ul {
+      list-style-type:none;
+      text-transform: uppercase;
+      justify-content: space-between;
+      width: 40%;
+
+
+      a {
+        color: white;
+        &:hover {
+          color: darken(white, 80%);
+        }
+      }
+    }
+  }
+}
+
+.breadSearch {
+    background-color: #f2f2f2;
+
+    .breadcrumb {
+        background-color: #f2f2f2;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .breadcrumb > li > a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.featureProducts {
+
+    li.active a {
+        background: -webkit-linear-gradient(#007bff, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    a {
+        color:black;
+        &:hover {
+            background: -webkit-linear-gradient(#007bff, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+    }
+
+}
+
+.show-product {
+
+   // for a:hover but it's not working
+}
+
+
+footer {
+    background: url('/img/orangeWave.png');
+    background-size: cover;
+
+    .footer-copyright > a {
+        text-decoration: none;
+    }
+}
